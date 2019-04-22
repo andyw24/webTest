@@ -16,8 +16,8 @@ myDatabase.child('users').on('value', snap => testBig.innerText = snap.val());
 function writeData() {
 	var uName = "bob";
 	var pass = "ross";
-	var uid = "testID";
-	firebase.myDatabase().ref().child("users").child(uid).push().set( {
+	var uid = "1234";
+	myDatabase().child('users').child(uid).push().set( {
 		username: uName,
 		password: pass
 	});
