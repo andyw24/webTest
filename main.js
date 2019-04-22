@@ -20,5 +20,4 @@ function writeData() {
 		username: uName,
 		password: pass
 	});
-	document.getElementById("demo").innerHTML = "maybe";
 }
