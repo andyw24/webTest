@@ -9,11 +9,7 @@ var config = {
 };
 firebase.initializeApp(config);
 
-
-
-
 var myDatabase = firebase.database().ref();
-
 var testBig = document.getElementById('testBig');
 myDatabase.child('users').on('value', snap => testBig.innerText = snap.val());
 
