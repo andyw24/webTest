@@ -9,6 +9,9 @@ var config = {
 };
 firebase.initializeApp(config);
 
+
+
+
 var myDatabase = firebase.database().ref();
 
 var testBig = document.getElementById('testBig');
