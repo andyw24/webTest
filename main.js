@@ -17,7 +17,7 @@ function writeData() {
 	var uName = "bob";
 	var pass = "ross";
 	var uid = "1234";
-	myDatabase().child('users').child(uid).push().set( {
+	firebase.myDatabase().child('users').child(uid).push().set( {
 		username: uName,
 		password: pass
 	});
