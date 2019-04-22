@@ -22,7 +22,7 @@ function writeData() {
 	newUser.set({
 		username: uName,
 		password: pass
-	);
+	});
 	/*
 	firebase.myDatabase().child('users').child(uid).push().set( {
 		username: uName,
